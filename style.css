@@ -99,15 +99,34 @@ form {
   margin: 40px 0;
 }
 
-form label {
-  display: block;
-  font-size: 20px;
-  margin 0 0 10px;
-}
-
-form input {
+.input-padrao {
   display: block;
   margin: 0 0 20px;
   padding: 10px 25px;
   width: 50%;
+}
+
+form label, form p {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+/*
+Só funcionou após comentar isto... Abrir dúvida no forum.
+No forum foi apontado como solução fazer o que eu fiz mesmo.
+Não vi em que momento o professor disse para remover este estilo, mas...
+ */
+
+/*
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+*/
+
+.checkbox {
+  margin: 20px 0;
 }

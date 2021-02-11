@@ -112,10 +112,6 @@ Parágrafos localizados após uma imagem
 Parágrafos que **não** compõem missão
 
 */
-.principal p:not(#misssao){
-  background: darkblue;
-}
-
 form {
   margin: 40px 0;
 }
@@ -288,4 +284,22 @@ td, th {
 
 .itens:before {
   content: "★";
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
 }

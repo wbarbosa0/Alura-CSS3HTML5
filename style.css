@@ -96,6 +96,26 @@ footer {
 
 main {}
 
+/*
+Seletores avancados
+
+main > p
+p filhos diretos de main, ignora os demais
+
+img + p
+Primeiro p no mesmo nível de uma img na hierarquia
+
+img ~ p
+Parágrafos localizados após uma imagem
+
+.principal p:not(#misssao)
+Parágrafos que **não** compõem missão
+
+*/
+.principal p:not(#misssao){
+  background: darkblue;
+}
+
 form {
   margin: 40px 0;
 }
@@ -195,7 +215,8 @@ td, th {
 }
 
 .utensilios {
-  width: 120px;
+  /* Usando calc() !*/
+  width: calc(40% - 26px);
   float: left;
   margin: 0 20px 20px 0;
 }
@@ -206,7 +227,8 @@ td, th {
 
 .mapa {
   padding: 3em 0;
-  background: linear-gradient(#FEFEFE, #888888);}
+  background: linear-gradient(#FEFEFE, #888888);
+}
 
 .mapa p {
   margin: 0 0 2em;
